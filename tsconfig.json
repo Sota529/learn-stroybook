@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "esModuleInterop": true
+    // some options here.
+  },
+  "include": [
+    "next-env.d.ts",
+    "src/**/*"
+  ],
+  "exclude": [
+    "*test.(ts|tsx)"
+  ]
+}
