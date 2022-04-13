@@ -52,9 +52,8 @@ export function PureTaskList({ loading, tasks, onPinTask, onArchiveTask }) {
   );
 }
 
-//@ts-ignore
 export default connect(
-  (tasks: any) => ({
+  ({ tasks }: any) => ({
     tasks: tasks.filter(
       (t) => t.state === "TASK_INBOX" || t.state === "TASK_PINNED"
     ),
